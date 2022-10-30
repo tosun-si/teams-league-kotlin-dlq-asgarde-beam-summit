@@ -12,15 +12,15 @@
     <packaging>jar</packaging>
 
     <properties>
-        <beam.version>2.39.0</beam.version>
+        <beam.version>2.42.0</beam.version>
 
-        <asgarde.version>0.18.0</asgarde.version>
+        <asgarde.version>0.21.0</asgarde.version>
 
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.compiler.jvmTarget>1.8</kotlin.compiler.jvmTarget>
         <kotlin.compiler.incremental>true</kotlin.compiler.incremental>
 
-        <kotlin.version>1.5.0</kotlin.version>
+        <kotlin.version>1.7.0</kotlin.version>
         <serialization.version>1.2.0</serialization.version>
         <java.version>1.8</java.version>
 
