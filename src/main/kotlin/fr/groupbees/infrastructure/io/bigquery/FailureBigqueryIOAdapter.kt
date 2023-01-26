@@ -14,7 +14,7 @@ import javax.inject.Inject
 
 class FailureBigqueryIOAdapter @Inject constructor(private val failureConf: FailureConf) : FailureIOConnector {
 
-    override fun write(): PTransform<PCollection<Failure>, out POutput?> {
+    override fun write(): PTransform<PCollection<Failure>, out POutput> {
         return BigQueryIO.write<Failure>()
             .withMethod(BigQueryIO.Write.Method.FILE_LOADS)
             .to("${failureConf.outputDataset}.${failureConf.outputTable}")
